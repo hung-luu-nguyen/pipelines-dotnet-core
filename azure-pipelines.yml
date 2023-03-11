@@ -7,7 +7,10 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  name: az400m05l05a-pool
+  demands:
+  - msbuild
+  - visualstudio
 
 steps:
 - script: echo Hello, world!
